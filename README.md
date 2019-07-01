@@ -1,4 +1,4 @@
-# Awards01
+# Awards
 This is a site to post projects and people get the chance to comment and rate the projects.
 
 ## Author name
