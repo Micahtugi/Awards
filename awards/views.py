@@ -12,7 +12,10 @@ from django.views.generic import (
 from .models import Post
 from .forms import CommentForm
 from django.shortcuts import redirect
-
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from .models import MoringaMerch
+from .serializer import MerchSerializer
 
 def home(request):
     context = {
@@ -95,3 +98,9 @@ def add_comment_to_post(request, pk):
     else:
         form = CommentForm()
     return render(request, 'awards/add_comment_to_post.html', {'form': form})
+
+class MerchList(APIView):
+    def get(self, request, format=None):
+        all_merch = MoringaMerch.objects.all()
+        serializers = MerchSerializer(all_merch, many=True)
+        return Response(serializers.data)
