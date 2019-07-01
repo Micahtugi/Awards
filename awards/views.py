@@ -14,8 +14,7 @@ from .forms import CommentForm
 from django.shortcuts import redirect
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .models import MoringaMerch
-from .serializer import MerchSerializer
+
 
 def home(request):
     context = {
