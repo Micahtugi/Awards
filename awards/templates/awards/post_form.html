@@ -1,0 +1,16 @@
+{% extends "awards/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="container" style="width: 70%;">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Create your post by adding an Image and a link to your project</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-info" type="submit">Post</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
