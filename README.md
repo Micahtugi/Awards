@@ -3,7 +3,7 @@ This is a site to post projects and people get the chance to comment and rate th
 
 ## Author name
 
-Nelson Kioko
+Micah Mutugi
 
 ## Technologies Used
 
@@ -66,16 +66,13 @@ Use this link to see the web-page
 
 
 ## Contact Information
-
-Email => kiokonelson2@gmail.com
-
-Phone Number => 0777770089
+Incase of any questions or comments feel free to write me an email @micahkimathi@gmail.com
 
 ## License
 
 MIT License
 
-Copyright (c) [2019] [Nelson kioko]
+Copyright (c) [2019] [Micah Mutugi]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
